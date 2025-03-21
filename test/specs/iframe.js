@@ -1,3 +1,4 @@
+import { $, expect, browser } from "@wdio/globals"
 describe('IFrame',()=>{
     it('Working with iframe', async ()=>{
         await browser.url('/iframe-sample/')

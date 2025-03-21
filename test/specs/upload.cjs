@@ -1,3 +1,4 @@
+import { $, expect, browser } from "@wdio/globals"
 const path = require('path');
 describe('Upload Tests',()=>{
     it('Simple upload test', async ()=>{

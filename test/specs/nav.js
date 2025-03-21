@@ -1,6 +1,7 @@
+import homePage from "../pageobjects/home-page";
 describe('Navigation Menu', () => {
     beforeEach(async () => {
-        await browser.url('/');
+        await homePage.open();
     })
     it('Get the text of all menu items & assert then', async () => {
         const expectedLinks = [
@@ -14,7 +15,7 @@ describe('Navigation Menu', () => {
 
         const actualLinks = [];
 
-        const navLinks = await $('#zak-primary-menu').$$('li[id*=menu]');
+        const navLinks = await homePage.navComponent.linksNavMenuWith2Selectors;
 
         for( const link of navLinks){
             actualLinks.push(await link.getText());
@@ -35,7 +36,7 @@ describe('Navigation Menu', () => {
 
         const actualLinks = [];
 
-        const navLinks = await $$('#zak-primary-menu li[id*=menu]');
+        const navLinks = await homePage.navComponent.linksNavMenuWith1Selectors;
 
         for( const link of navLinks){
             actualLinks.push(await link.getText());
@@ -56,9 +57,9 @@ describe('Navigation Menu', () => {
 
         const actualLinks = [];
 
-        await $('#zak-primary-menu').waitForDisplayed({timeout: 2000});
+        await homePage.navComponent.menu.waitForDisplayed({timeout: 2000});
 
-        const navLinks = await $$('#zak-primary-menu li[id*=menu]');
+        const navLinks = await homePage.navComponent.linksNavMenuWith1Selectors;
 
         for( const link of navLinks){
             actualLinks.push(await link.getText());
