@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","17874","Fill all the inputs fields, subimit and assert success message","","Sat Mar 22 14:27:28 BRT 2025","broken","Sat Mar 22 14:27:46 BRT 2025","","Contact Menu","",""
+"","23101","Fill all the inputs fields, subimit and assert success message","","Sat Mar 22 15:02:41 BRT 2025","passed","Sat Mar 22 15:03:04 BRT 2025","","Contact Menu","",""
+"","20605","Fill all the inputs fields, subimit and assert success message","","Sat Mar 22 15:02:42 BRT 2025","broken","Sat Mar 22 15:03:03 BRT 2025","","Contact Menu","",""

@@ -8,6 +8,6 @@ describe('IFrame',()=>{
         await expect($(".ekit-wid-con h1")).toExist();
 
         await browser.switchToParentFrame();
-        await expect($('h1.zak-page-title')).toHaveText('IFrame Samples')  
+        await expect($('h1.zak-page-title')).toHaveText('IFrame Sample')  
     })
 })
